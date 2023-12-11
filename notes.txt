@@ -1,0 +1,79 @@
+pseudo class
+------------
+pseudo class is a keyword added to a selector that specifies a special state of the selected elements.
+
+egs:
+*hover pseudo class
+*visited
+*checked
+*active
+
+css grid system
+---------------
+The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.
+
+Display Property
+An HTML element becomes a grid container when its display property is set to grid or inline-grid.
+
+syntax
+------
+.grid-container {
+  display: inline-grid;
+}
+
+Grid Gaps
+----------
+The spaces between each column/row are called gaps.
+
+You can adjust the gap size by using one of the following properties:
+
+* column-gap
+* row-gap
+* gap
+
+Example
+-The column-gap property sets the gap between the columns:
+
+.grid-container {
+  display: grid;
+  column-gap: 50px;
+}
+
+-The row-gap property sets the gap between the rows:
+
+.grid-container {
+  display: grid;
+  row-gap: 50px;
+}
+
+-The gap property is a shorthand property for the row-gap and the column-gap properties:
+
+.grid-container {
+  display: grid;
+  gap: 50px 100px;
+}
+
+
+css grid template coilumns
+--------------------------
+The grid-template-columns property specifies the number (and the widths) of columns in a grid layout.
+
+The values are a space separated list, where each value specifies the size of the respective column.
+
+CSS @keyframes Rule - for animation
+------------------
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 200px;}
+}
+
+
+or
+
+@keyframes mymove {
+  0%   {top: 0px;}
+  25%  {top: 200px;}
+  50%  {top: 100px;}
+  75%  {top: 200px;}
+  100% {top: 0px;}
+}

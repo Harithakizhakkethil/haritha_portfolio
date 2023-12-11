@@ -1,0 +1,276 @@
+*{
+    margin:0px;
+    padding:0px;
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}  
+   
+#container{
+    width: 100%;
+    height: 100vh; /*1vh = 19.2px  100vh => full screen height (vh - viewport height) */
+    position: relative; /* position: relative; is positioned relative to its normal position.*/
+    background-color: white;
+        }
+#logo{
+    width: 120px;
+
+}
+#navbar{
+    display: flex; /* images and icons will come to side by side*/
+    justify-content: space-between; /* images and icons will come in two end*/
+    align-items: center;/* vertically center*/
+    width: 85%;
+    margin-left: 100px;
+}
+.listitem{
+    display: inline-block;
+    list-style: none; /*list style become none*/
+    margin: 10px 20px;
+}  
+.links{
+    text-decoration: none; /* to remove the underline*/
+    color: black; /*TO SET BLACK COLOR*/
+    font-weight: bolder;/* to set bold*/
+}
+
+.links:hover{
+    color:orangered;
+}
+.title{
+    margin-left: 8%;
+    margin-top:13% ;
+}
+.title_h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#lastname{
+    color: orange;
+
+}
+#download{
+    background-color: black;
+    color: white;
+    text-decoration: none; /* to remov e underline*/
+    display: inline-block; /* it respects both top & bottom margins and paddings.*/
+    margin: 30px 0px;
+    padding: 20px; /* space between content and margin*/
+    border-radius: 10px; /* corners shaped like radius*/
+
+}
+
+.images{
+    width: 40%;
+    height: 80%;
+    position: absolute;/*is positioned relative to its parent*/
+    bottom: 0px;/* bottom margin*/
+    right: 40px;
+
+}
+.imageGroup{
+    position: absolute;
+    height: 100%;
+    bottom: 0px; /*initial*/
+    left: 50%; /*initial*/
+    transform: translateX(-50%); /*to remove the left 50%*/
+    transition: bottom 1s, left 2s;
+    
+}
+.images:hover #shape{
+    bottom: 60px;
+}
+
+.images:hover #girl{
+    left: 40%;
+
+}
+
+#about{
+    margin: 20% 8% 0% 8% ;
+}
+
+.heading{
+    text-align: center;
+}
+
+.heading h2{
+    text-align: center;
+    font-size: 25px;
+}
+
+.heading span{
+    color: green;
+    font-size: 20px;
+}
+
+.about_content{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr) ;  /*The grid-template-columns property specifies the number (and the widths) of columns in a grid layout.  The values are a space separated list, where each value specifies the size of the respective column.
+      1 fr = 225px*/
+    column-gap: 2rem; /*1 rem=16px*/
+    margin-top: 2rem;
+}
+
+.about_image img{
+    width: 90%;
+    border-radius: 10px;
+}
+
+.about_para p{
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.information{
+    margin-top: 2rem;
+
+}
+
+.info-box{
+    margin-bottom: 1rem;
+    align-items: center;
+    font-size: 18px;
+}
+
+.info-box span{
+    margin-left: 1rem;
+}
+
+#skill{
+    margin: 8% 8% 0px 8%;
+}
+
+.skill_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+    margin-top: 2rem;
+
+}
+.skill_img img{
+    width: 90%;
+    padding-left: 4rem;
+    object-position:center ; /* is used to specify how an image or a video should be positioned within the x & y coordinator*/    
+
+}
+
+.progress_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 1rem 0px;
+    position: relative;
+}
+
+.progress_bar span{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.base_bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 0.5rem;
+
+}
+.html_bar{
+    background-color: orange;
+    width: 95%;
+}
+
+.css_bar{
+    background-color: orange;
+    width: 88%;   
+
+}
+
+.js_bar{
+    background-color: orange;
+    width: 89%;
+
+}
+
+.react_bar{
+    background-color: orange;
+    width: 85%;
+}
+
+.icon-set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+
+}
+
+.icon, .up-arrow{
+    width: 50px;
+    height: 50px;
+    /*border: 1px solid black;*/
+    border-radius: 50%;
+    display: flex;
+    justify-content: center; /* horizontally center */
+    align-items: center; /*vertically center*/
+    margin: 0px 15px;
+}
+.icon:hover{
+   /*  background-color: orange; */
+    background-image: linear-gradient(to bottom right, yellow, red); /*for gradient of two colors*/
+}
+.icon i{
+    color:black;
+    font-size: 1.7rem;
+}
+
+.icon :hover i{
+    color: white;
+    animation: shake 0.75s; /* for animations*/
+
+}
+
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+
+footer p{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+   
+}
+
+.up-arrow{
+    text-align: end;
+    
+}
+
+.up-arrow{
+    background-image: linear-gradient(to bottom right, yellow, red);
+    margin-top: 35px;
+    float: right; /*float from right*/
+    margin: 10px 20px 50px 0px;   
+
+}
+.up-arrow:hover i{
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
